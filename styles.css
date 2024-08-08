@@ -1,0 +1,203 @@
+@import "colors.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    border-bottom: 1px solid var(--accent);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    width: 100vw;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    border-bottom: 1px solid var(--accent);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#nav {
+    width: 100%;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav a {
+    padding: 10px 15px;
+    color: var(--text);
+    text-decoration: none;
+}
+
+#nav a:hover {
+    transition: 500ms;
+    color: var(--accent);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero Styles */
+
+#hero {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+#hero h1 {
+    font-weight: 700;
+    font-size: 3em;
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    color: var(--text);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#hero h2 {
+    font-weight: 400;
+    font-size: 1.5em;
+    margin: 10px 0;
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 30px 0;
+    animation: fadeInAnimation ease 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+    25% {
+        background-position: 50% 100%;
+    }
+	50% {
+		background-position: 100% 50%;
+	}
+	75% {
+		background-position: 50% 0%;
+	}
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* About Styles */
+
+#about {
+    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+#about .container {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    gap: 5em;
+}
+
+#about .text {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    line-height: 2em;
+    align-items: center;
+}
+
+#about h2, #about h3{
+    color: var(--accent);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+#about img {
+    align-self: center;
+    height: auto;
+    width: 100%;
+    border-radius: 300px;
+    border: 5px solid var(--accent);
+    object-fit: cover;
+}
+
+/* Project Styles */
+
+#projects {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+/* Skills Styles */
+
+#skills {
+    background: linear-gradient(-45deg, var(--primary), var(--secondary));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+/* Contact Styles */
+
+#contact {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-size: 300% 300%;
+    animation: gradient 10s ease infinite;
+}
+
+#contact a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+/* #contact a:visited {
+    color: var(--accent);
+} */
