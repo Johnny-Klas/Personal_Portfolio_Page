@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>My Portfolio</title>
 </head>
+
 <body>
     <header id="navbar">
         <div class="menu-toggle" id="menu-toggle">
@@ -24,7 +26,10 @@
     </header>
     <section id="hero">
         <div class="container">
-            <h1>Ioannis Antonopoulos</h1>
+            <h1 class=fade-in>
+                <span>I</span><span>o</span><span>a</span><span>n</span><span>n</span><span>i</span><span>s</span>
+                <span>A</span><span>n</span><span>t</span><span>o</span><span>n</span><span>o</span><span>p</span><span>o</span><span>u</span><span>l</span><span>o</span><span>s</span>
+            </h1>
             <h2>Web Developer & Designer</h2>
             <p>Learning things by making things, one thing at a time.</p>
         </div>
@@ -33,29 +38,54 @@
         <div class="container">
             <div class="text">
                 <h2>About Me</h2>
-                <p>Hi! I'm Ioannis Antonopoulos, a full-stack developer in the making with a passion for technology and an insatiable thirst for knowledge. My critical thinking abilities and problem-solving skills, combined with this passion, have made me deeply enthusiastic about computer science. I aim to pursue a career in software development and leverage my skills to build innovative, secure, and impactful software solutions.</p>
+                <p>Hi! I'm Ioannis Antonopoulos, a full-stack developer in the making with a passion for technology and
+                    an insatiable thirst for knowledge. My critical thinking abilities and problem-solving skills,
+                    combined with this passion, have made me deeply enthusiastic about computer science. I aim to pursue
+                    a career in software development and leverage my skills to build innovative, secure, and impactful
+                    software solutions.</p>
                 <h3>Education</h3>
-                <p>I hold an Associate's Degree in Software Applications Technician/Computer Programming from IEK AKMI, where I developed a strong foundation in programming, Algorithms, and software engineering principles.
-                During my studies, I excelled in courses like Data Structures, and Web Development.</p>
+                <p>I hold an Associate's Degree in Software Applications Technician/Computer Programming from IEK AKMI,
+                    where I developed a strong foundation in programming, Algorithms, and software engineering
+                    principles.
+                    During my studies, I excelled in courses like Data Structures, and Web Development.</p>
             </div>
             <img src="hidethepain.jpg" alt="hide the pain">
         </div>
     </section>
     <section id="projects">
-        <div class="container">
+        <div class="carousel-container">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description</p>
+            <div class="carousel">
+                <div class="carousel__item">
+                    <a href="https://github.com/Johnny-Klas/" target="_blank">
+                        <div class="text">
+                            <h3>Project 1</h3>
+                            <p>Description</p>
+                        </div>
+                        <img src="1.jpg" alt="project 1">
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="https://github.com/Johnny-Klas/" target="_blank">
+                        <div class="text">
+                            <h3>Project 2</h3>
+                            <p>Description</p>
+                        </div>
+                        <img src="2.jpg" alt="project 2">
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="https://github.com/Johnny-Klas/" target="_blank">
+                        <div class="text">
+                            <h3>Project 3</h3>
+                            <p>Description</p>
+                        </div>
+                        <img src="3.jpg" alt="project 3">
+                    </a>
+                </div>
             </div>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description</p>
-            </div>
-            <div class="project">
-                <h3>Project Title</h3>
-                <p>Description</p>
-            </div>
+            <button class="prev" onclick="rotateCarousel(120)">&#x25C0;</button>
+            <button class="next" onclick="rotateCarousel(-120)">&#x25B6;</button>
         </div>
     </section>
     <section id="skills">
@@ -65,7 +95,8 @@
             <ul>
                 <li>Programming Languages: JavaScript, HTML5, CSS3, Python, Java</li>
                 <li>Tools & Platforms: Git & GitHub, VS Code/Community, PyCharm, Apache NetBeans</li>
-                <li>Databases: MySQL (intermediate/advanced knowledge, including triggers, stored procedures, functions)</li>
+                <li>Databases: MySQL (intermediate/advanced knowledge, including triggers, stored procedures, functions)
+                </li>
                 <li>Other: RESTful APIs (understanding)</li>
             </ul>
             <p>Soft Skills:</p>
@@ -98,4 +129,5 @@
     </section>
     <script src="hamburger.js"></script>
 </body>
+
 </html>
