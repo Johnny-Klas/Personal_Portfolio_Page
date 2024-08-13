@@ -378,7 +378,7 @@ section#about {
 .skill_card:hover {
     transform: scale(1.1);
     animation: shake 500ms ease-in-out;
-    z-index: 100;
+    z-index: 1;
 }
 
 @keyframes shake {
